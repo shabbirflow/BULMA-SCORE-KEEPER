@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<head>
+    <!-- <title>Input Event</title> -->
+    <link rel="stylesheet" href="app.css">
+    <title>Score Keeper</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+</head>
+
+<body>
+    <section>
+    <div class="container">
+        <div class="columns">
+            <div class="column is-half is-offset-one-quarter">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-4by3">
+                            <img src="https://images.unsplash.com/photo-1609710228159-0fa9bd7c0827?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                                alt="Placeholder image">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <p class="title is-4">Ping Pong Score Keeper</p>
+                                <p class="subtitle is-6">Use the buttons below to keep score</p>
+                                <div>
+                                    <label for="maxplay" class="label is-inline is-large">Playing upto:</label>
+                                    <input type="number" class="input is-rounded is-inline" id="maxplay" min="0"
+                                        max="150" placeholder="5">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="content">
+                            <h1 class="title is-1"><span id="team1display">0</span> to <span id="team2display">0</span>
+                            </h1>
+                        </div>
+                        <footer class="card-footer">
+                            <button class="is-primary button card-footer-item" id="team1but">+ Team 1</button>
+                            <button class="is-info button card-footer-item" id="team2but">+ Team 2</button>
+                            <button class="is-danger button card-footer-item" id="reset">RESET</button>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- <h2>SCORE KEEPER!</h2> -->
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
